@@ -1,0 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+		String sUserId = (String)session.getAttribute("sUserId");
+		if(sUserId == null){
+			out.println("<script>");
+			out.println("alert('회원전용 컨텐츠입니다. 로그인하세요')");
+			out.println("location.href='user_login_form.jsp';");
+			out.println("</script>");
+			return;
+		}
+%>

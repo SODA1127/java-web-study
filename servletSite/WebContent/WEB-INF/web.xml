@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>servletSite</display-name>
+  <servlet>
+    <servlet-name>hs</servlet-name>
+    <servlet-class>com.itwill.servlet.hello.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hs</servlet-name>
+    <url-pattern>/hello.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>fs</servlet-name>
+    <servlet-class>com.itwill.servlet.first.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>fs</servlet-name>
+    <url-pattern>/first.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>HttpServletRequestServlet</display-name>
+    <servlet-name>HttpServletRequestServlet</servlet-name>
+    <servlet-class>com.itwill.servlet.request.HttpServletRequestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HttpServletRequestServlet</servlet-name>
+    <url-pattern>/request.do</url-pattern>
+    <url-pattern>/request.html</url-pattern>
+    <url-pattern>/request.jsp</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

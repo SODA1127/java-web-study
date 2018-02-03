@@ -1,0 +1,5 @@
+1. browser url 기술 후 enter key
+2. F5키 새로고침 키
+3. 이클립스 cmd + F11 : Get방식의 요청
+4. a(anchor) tag click --> href에 기술된 url
+5. form 안에 <input type = "submit"/>

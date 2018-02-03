@@ -1,0 +1,5 @@
+1. jar 파일 WEB-INF/lib 에위치
+2. web.xml DispacherServlet 등록 매핑
+3. controller_mapping.properties파일생성
+4. web.xml에 controller_mapping.properties 파일의 위치를 파라메타로등록
+5. Controller 작성 Controller_mapping.properties파일에 설정 
