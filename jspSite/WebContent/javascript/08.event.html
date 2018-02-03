@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function function1() {
+		console.log('function1()');
+	}
+	function function2(a, b) {
+		console.log('function2(' + a + ', '+ b + ')');
+	}
+	function function3(a, b, c) {
+		console.log('function3(' + a + ', '+ b + ',' + c + ')');
+	}
+</script>
+
+</head>
+<body onload="console.log('body onload');">
+	<h1 onclick="console.log('h1 click');">자바스크립트 이벤트</h1>
+	<pre>
+	1. 	브라우저 객체들의 속성(멤버) onxxx로 시작하는
+	
+		속성들을 이벤트속성(property)라고 한다.
+	2. 이벤트속성에 자바스크립트 코드를 기술하면
+		특정이벤트 발생시에 자바스크립트 코드를 실행한다.
+	</pre>
+	<h3 onmouseover="console.log('mouse over');">회원로그인</h3>
+	<form onsubmit="console.log('form submit');">
+		아이디 : <input type="text" onkeydown="console.log('key down');" name="id"><br />
+		패숴드 : <input type="text" name="pw"><br />
+					<input type="submit" value="submit 버튼">
+					<input type="reset" value="reset 버튼">
+	</form>
+	<h3>이벤트 발생시 자바스크립트 코드 function 실행</h3><hr>
+	<div>
+		<input type="button" value="function1" onclick="function1()">
+		<input type="button" value="function2" onclick="function2(123, 456)">
+		<input type="button" value="function3" onclick="function3('김', 111, true)">
+	</div>
+</body>
+</html>

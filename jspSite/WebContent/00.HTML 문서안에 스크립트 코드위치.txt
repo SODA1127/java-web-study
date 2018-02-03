@@ -1,0 +1,9 @@
+A.brower url기술후 enter key
+B.F5
+C.eclipse ctrl+F11
+D.a(anchor) tag click--> href에기술된 URL
+D.a(anchor) tag click--> href에기술된 javascript function호출(form객체.submit();)
+E.form 안의 <input type="submit"/> <input type="image"/>
+F.javascript form객체.submit();
+G.이벤트프로퍼티안에 javascript function호출(form객체.submit();)
+

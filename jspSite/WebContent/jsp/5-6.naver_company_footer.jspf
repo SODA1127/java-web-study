@@ -1,0 +1,9 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<address>
+	<a href="http://www.nhncorp.com/" target="_blank" class="logo">
+	<img src="./res/logo_naver.gif" width="63" height="15" alt="NAVER"></a>
+	<em>Copyright</em>
+	<a href="http://www.nhncorp.com/" target="_blank">NAVER Corp.</a>
+	<span>All Rights Reserved.</span>
+</address>

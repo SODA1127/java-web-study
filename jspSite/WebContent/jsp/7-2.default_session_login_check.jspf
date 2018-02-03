@@ -1,0 +1,18 @@
+<!-- 7-2.default_session_login_check.jspf -->
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+	pageEncoding="EUC-KR"%>
+<%
+	/*
+		회원전용페이지 - 로그인 한 브라우저만 (세션 바인딩이 되야함)
+	*/
+	String sid = (String) session.getAttribute("sid");
+	if (sid == null) {
+		//로그인 안한사람
+
+		out.println("<script>");
+		out.println("alert('로그인한 사람만 볼 수 있는 회원전용 페이지입니다.');");
+		out.println("location.replace('7-2.default_session_login.jsp');");
+		out.println("</script>");
+		return;
+	}
+%>

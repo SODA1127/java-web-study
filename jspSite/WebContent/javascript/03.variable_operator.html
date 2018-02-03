@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var i = 12;
+	var name = '김경호';
+	var isMarried = true;
+	/*
+	반드시 var키워드를 사용
+	*/
+	count = 67;
+	window.myVar = '변수선언';
+	
+	
+	
+	document.write('<h1>자바스크립트 변수, 연산자</h1>');
+	document.write(window.i  + '<br/>');
+	document.write(window.name  + '<br/>');
+	document.write(window.isMarried  + '<br/>');
+	document.write(window.myVar  + '<br/>');
+	document.write('/*************************************************************/' + '<br/>');
+	var a;
+	var b = null;
+	var zeroNo = 0;
+	var zeroStr = '0';
+	var no = 12;
+	var str = '김경호';
+	var strArray = ['KIM', 'LEE', 'PARk'];
+	
+	document.write(typeof a + '<br/>');
+	document.write(typeof b + '<br/>');
+	document.write(typeof zeroNo + '<br/>');
+	document.write(typeof zeroStr + '<br/>');
+	document.write(typeof no + '<br/>');
+	document.write(typeof str + '<br/>');
+	document.write(typeof strArray + '<br/>');
+	
+	document.write('/*************************************************************/' + '<br/>');
+	if(!a){
+		document.write('undefined-->false<br/>');
+	}
+	if(!b){
+		document.write('null-->false<br/>');
+	}
+	if(!zeroNo){
+		document.write('zeroNo-->false<br/>');
+	}
+	if(zeroStr){
+		document.write('zeroStr-->true<br/>');
+	}
+	if(no){
+		document.write('no-->true<br/>');
+	}
+	if(str){
+		document.write('str-->true<br/>');
+	}
+	
+</script>
+</head>
+<body>
+</body>
+</html>

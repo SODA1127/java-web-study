@@ -1,0 +1,7 @@
+1.<script> tag안
+2.외부 *.js파일에작성후 include
+3. html tag 속성: 이벤트 속성(onclick)
+<input type = "button" onclick = "자바스크립트"/>
+4. html a tag 속성 : href
+	ex> <a href = "javascript:자바스크립트코드">가입</a>
+	

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바스크립트 변수, 연산자</h1>
+	<script type="text/javascript">
+		var a = 1;
+		var b = 2;
+		
+		var result = a + b;
+		result = a - b;
+		result = a * b;
+		result = a / b;
+		document.write('1 / 2 = ' + result + '<br/>');
+		result = a % b;
+		document.write('1 % 2 = ' + result + '<br/>');
+		
+		result = a>b;
+		result = a<b;
+		result = a>=b;
+		result = a<=b;
+		result = a!=b;
+		document.write('a!=b = ' + result + '<br/>');
+		
+		var date = new Date();
+		var hour = date.getHours();
+		var msg = '';
+		if(hour >= 12){
+			msg = '오후입니다.';
+		}else if(hour >= 18){
+			msg = '저녁입니다.';
+		}else if(hour >= 21){
+			msg = '밤입니다.';
+		}
+		document.write("if statement : " + msg + '<br/>');
+		var no = 23;
+		switch(no%2){
+		case 0:
+			document.write('switch statement : 짝수 <br/>');
+			break;
+		case 1:
+			document.write('switch statement :  홀수 <br/>');
+			break;
+		}
+		
+		/*
+		삼항연산자
+		*/
+		
+		var level = 78;
+		(level > 0)?'양수':'음수';
+		document.write('삼항연산자');
+		(level>0)?alert('양수'):alert('음수');
+		
+		
+	</script>
+</body>
+</html>

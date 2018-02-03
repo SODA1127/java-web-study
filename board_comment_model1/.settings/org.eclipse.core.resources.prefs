@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding//WebContent/sql/board.sql=UTF-8
+encoding//WebContent/sql/board_comment_init.sql=UTF-8
+encoding//src/com/itwill/board/BoardDao.java=EUC-KR
+encoding//src/com/itwill/board/BoardException.java=EUC-KR

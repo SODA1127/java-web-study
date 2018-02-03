@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/*
+	2 . class selector
+	*/
+/************member.css*************/
+.TXTFLD {
+	color: black;
+	border: 1px solid black;
+}
+
+.TXTFLD1 {
+	color: red;
+	border: 1px dotted blue;
+}
+
+/*
+	3.id selector
+	*/
+#footer {
+	color: green;
+	background: yellow;
+	border-bottom: 5px double black;
+}
+/********************************/

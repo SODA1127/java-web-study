@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="EUC-KR">
+      <title>DOM</title>
+      <script type="text/javascript">
+         function h1Access(){
+            var h1E = document.getElementById('title');
+            //alert(h1E);
+            var h1Text = h1E.innerHTML;
+            h1E.innerHTML='h1변경'
+         }
+         function formAccess(){
+            var formE = document.getElementById('memberFrm');
+            //alert(formE);
+            var actionStr=formE.action;
+            var methodStr=formE.method;
+            
+            var divE = document.getElementById('printArea');
+            divE.innerHTML='form action:'+actionStr+'<br/>';
+            divE.innerHTML+='form method:'+methodStr;
+         }
+         function formElementAccess(){
+            var formE = document.getElementById('memberFrm');
+            /*
+            form객체안에있는 element는 form.name으로접근가능
+            */
+            //alert(formE.id); 
+            //alert(document.getElementById('id'));
+            //alert(formE.pass); 
+            //alert(document.getElementById('pass'));
+            var idStr = formE.id.value;
+            var passStr = formE.pass.value;
+            
+            if(idStr==''){
+               alert('아이디를 입력해주세요!!');
+               formE.id.focus();
+               return;
+            }
+            if(passStr==''){
+               alert('패스워드를 입력해주세요!!');
+               formE.pass.focus();
+               return;
+            }
+         }
+         function divAccess(){
+            var divE = document.getElementById('printArea');
+            divE.innerHTML="<img src='../tomcat.gif'/>";
+         }
+      </script>
+   </head>
+   <body>
+      <h1 id="title">DOM(Document Object Model)</h1><hr/>
+      <pre>
+         DOM Tree에있는 특정 노드객체의 참조변수 구하기
+         [ document.getElementById('id'); ]
+      </pre>
+      <form id="memberFrm" action="login_action.jsp" method="get">
+         아이디:<input type="text" name="id" id="id"><br/>
+         패서드:<input type="text" name="pass" id="pass">
+      </form>
+      <div id="printArea">
+         프린트영역
+      </div>
+      <div>
+         <input type="button" onclick="h1Access();" value="h1 title">
+         <input type="button" onclick="formAccess();" value="form memberFrm">
+         <input type="button" onclick="divAccess();" value="div printArea">
+         <input type="button" onclick="formElementAccess();" 
+         value="element 이름">
+      </div>
+      
+   </body>
+</html>
+
+
+
+
+

@@ -1,0 +1,156 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>게시판</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<link rel=stylesheet href="css/styles.css" type="text/css">
+<link rel=stylesheet href="css/board.css" type="text/css">
+<script language="JavaScript">
+	function boardCreate() {
+		f.action = "board_write.jsp";
+		f.submit();
+	}
+	function boardReplyCreate() {
+		f.action = "board_reply_write.jsp";
+		f.submit();
+	}
+	function boardUpdate() {
+		f.action = "board_modify.jsp";
+		f.submit();
+	}
+	function boardRemove() {
+		if (confirm("정말 삭제하시겠습니까?")) {
+			f.action = "board_remove_action.jsp";
+			f.submit();
+		}
+	}
+	function boardList() {
+		f.action = "board_list.jsp?pageno=" + 1;
+		f.submit();
+	}
+</script>
+</head>
+<body bgcolor=#FFFFFF text=#000000 leftmargin=0 topmargin=0
+	marginwidth=0 marginheight=0>
+	<!-- container start-->
+	<div id="container">
+		<!-- header start -->
+		<div id="header">
+			<!-- include_common_top.jsp start-->
+
+			<h1>
+				<a href="user_main.jsp">WEB SAMPLE SITE</a>
+			</h1>
+			<!-- include_common_top.jsp end-->
+		</div>
+		<!-- header end -->
+		<!-- navigation start-->
+		<div id="navigation">
+			<!-- include_common_left.jsp start-->
+
+			<p>
+				<strong>메 뉴</strong>
+			</p>
+			<ul>
+
+				<li><a href="user_login.jsp">로그인</a></li>
+
+				<li><a></a></li>
+				<li><a href="guest_list.jsp">방명록</a></li>
+				<li><a href="shop_product_list.jsp">쇼핑몰</a></li>
+				<li><a href="javascript:userLogin();">회원관리</a></li>
+				<li><a href="board_list.jsp">게시판</a></li>
+			</ul>
+			<script type="text/javascript">
+				function userLogin() {
+					alert('로그인 하세요!!')
+					location.href = 'user_login.jsp';
+				}
+			</script>
+
+
+			<!-- include_common_left.jsp end-->
+		</div>
+		<!-- navigation end-->
+		<!-- wrapper start -->
+		<div id="wrapper">
+			<!-- content start -->
+			<!-- include_content.jsp start-->
+			<div id="content">
+				<table border=0 cellpadding=0 cellspacing=0>
+					<tr>
+						<td><br />
+							<table style="padding-left: 10px" border=0 cellpadding=0
+								cellspacing=0>
+								<tr>
+									<td bgcolor="f4f4f4" height="22">&nbsp;&nbsp; <b> 게시물
+											내용보기 </b>
+									</td>
+								</tr>
+							</table> <br>
+							<form name="f" method="post">
+								<input type="hidden" name="boardno" value="601"> <input
+									type="hidden" name="pageno" value="1">
+								<table border="0" cellpadding="0" cellspacing="1" width="590"
+									bgcolor="BBBBBB">
+									<tr>
+										<td width=100 align=center bgcolor="E6ECDE" height="22">글쓴이</td>
+										<td width=490 bgcolor="ffffff" style="padding-left: 10px"
+											align="left">fff</td>
+									</tr>
+
+									<tr>
+										<td width=100 align=center bgcolor="E6ECDE" height="22">제목</td>
+										<td width=490 bgcolor="ffffff" style="padding-left: 10px"
+											align="left">fffzXZ</td>
+									</tr>
+									<tr>
+										<td width=100 align=center bgcolor="E6ECDE" height="22">내용</td>
+										<td width=490 bgcolor="ffffff" height="130px"
+											style="padding-left: 10px" align="left">fffZXZ<br />
+
+										</td>
+									</tr>
+
+								</table>
+
+							</form> 
+							<!-- ------------ -->
+							
+
+							<table width=590 border=0 cellpadding=0 cellspacing=0>
+
+								<tr>
+									<td align=center><input type="button" value="글쓰기"
+										onClick="boardCreate()"> &nbsp; <input type="button"
+										value="답글쓰기" onClick="boardReplyCreate()"> &nbsp; <input
+										type="button" value="수정" onClick="boardUpdate()">
+										&nbsp; <input type="button" value="삭제" onClick="boardRemove()">
+										&nbsp; <input type="button" value="리스트" onClick="boardList()"></td>
+								</tr>
+
+							</table></td>
+
+					</tr>
+				</table>
+
+			</div>
+			<!-- include_content.jsp end-->
+			<!-- content end -->
+		</div>
+		<!--wrapper end-->
+		<div id="footer">
+			<!-- include_common_bottom.jsp start-->
+
+			<p align="center">Copyright (&copy;) By Kimkyoungho.[김경호] All
+				rights reserved.</p>
+			<!-- include_common_bottom.jsp end-->
+		</div>
+	</div>
+	<!--container end-->
+</body>

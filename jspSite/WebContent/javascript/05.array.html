@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var scoreArray = [ 23, 56, 87, 77, 11 ];
+	var nameArray = [ 'KIM', 'LEE', 'PARK', 'CHOI', 'SIM' ];
+</script>
+</head>
+<body>
+	<h1>자바스크립트 배열</h1>
+	<hr>
+	<script type="text/javascript">
+		var resultStr1 = "";
+		scoreArray.sort();
+		for (var i = 0; i < scoreArray.length; i++) {
+			resultStr1 += scoreArray[i] + ', ';
+		}
+		document.write(resultStr1 + '<br/>');
+	
+		var resultStr2 = "";
+		nameArray.sort();
+		for (var i = 0; i < nameArray.length; i++) {
+			resultStr2 += nameArray[i] + ', ';
+		}
+		document.write(resultStr2 + '<br/>');
+		
+		
+	</script>
+</body>
+</html>

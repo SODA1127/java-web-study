@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>function</title>
+<script type="text/javascript">
+	function func1() {
+		document.write('func1()' + '<br/>');
+	}
+	function func2(name) { //함수인자에는 var 키워드를 사용하지 않음
+		document.write('func2(' + name + ')' + '<br/>');
+		if(typeof name == 'undefined'){
+			name = 'Guest';
+		}
+		document.write(name + '님 안녕하세요!' + '<br/>');
+		
+	}
+	
+	function add(a, b){
+		var r = a + b;
+		return r;
+	}
+	function func3(name){
+		var msg = name;
+		return msg + '님 안녕하세요!';
+	}
+</script>
+</head>
+<body>
+	<h1>java script function</h1>
+	<br>
+	<script type="text/javascript">
+		if(window.func1){
+			func1();
+		}
+		if(window.func99){
+			func99();
+		}
+		
+		func2();
+		func2('김수한무거북이와두루미');
+		var result = add(3434, 47567);
+		document.write(result + '<br/>');
+		var msg = func3('Guest');
+		document.write(msg + '<br/>');
+		
+	</script>
+</body>
+</html>

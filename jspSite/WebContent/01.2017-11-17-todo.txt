@@ -1,0 +1,9 @@
+1.address Servlet작성
+2.address jsp작성
+
+
+A. member table 생성
+B. sql작성
+C. MemberDto,MemberDao
+D. html(리스트,상세보기,쓰기폼,수정폼)
+E. jsp(리스트,상세보기,쓰기폼,수정폼,삭제액션,쓰기액션,수정액션)

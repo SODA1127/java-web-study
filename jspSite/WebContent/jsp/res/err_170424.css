@@ -1,0 +1,40 @@
+@charset "utf-8";
+*{margin:0;padding:0;}
+body{background:url(https://s.pstatic.net/static/w8/err/bg_body.gif) repeat-x;color:#444;font:12px/1.7em 굴림,Gulim,AppleGothic,sans-serif;text-align:center;}
+img,fieldset{border:none;}
+a{color:#438a01;text-decoration:underline;}
+legend{display:none;}
+
+#wrap{width:560px;_height:618px;min-height:618px;margin:0 auto;background:url(https://s.pstatic.net/static/w8/err/bg_naver.gif) no-repeat 100% 109px;text-align:left;}
+
+#header{overflow:hidden;position:relative;height:80px;}
+#header h1{margin:36px 0 0 26px;}
+#header .menu{overflow:hidden;position:absolute;top:23px;right:28px;width:100%;color:#d7d7d7;font-family:돋움,Dotum;letter-spacing:-1px;text-align:right;}
+#header .menu a{margin:0 3px;color:#444;text-decoration:none;}
+#header .menu a:hover{text-decoration:underline;}
+
+#container{padding:33px 20px 0 81px;}
+#container h2{margin-bottom:24px;font:bold 14px/1.6em 돋움,Dotum;letter-spacing:-1px;}
+#container .content p{margin-bottom:10px;}
+.search{margin-top:30px;}
+.window02{margin-bottom:0;}
+.box_window{width:320px;height:22px;_height /**/:32px;margin:0 3px 11px 1px;padding:1px 3px 0 6px;border:5px solid #4ba300;background-color:#fff;font:bold 15px/1.5em 돋움,Dotum;vertical-align:4px;}
+*+html .box_window{vertical-align:4px;}
+.btn_window{vertical-align:top;_vertical-align:0;_vertical-align /**/:top;}
+.sch_desc{width:391px;text-align:center;}
+.sch_link{width:391px;margin-left:-1px;color:#dedede;text-align:center;}
+.sch_link a{margin:0 3px;color:#444;text-decoration:none;}
+.sch_link a:hover{text-decoration:underline;}
+
+#footer{margin-top:80px;text-align:center;}
+#footer a {text-decoration:none; color:#333;}
+#footer a:visited {text-decoration:none; color:#666;}/* 090923 해당라인 삭제 */
+#footer a:hover {text-decoration:underline;}
+#footer address {font:9px/14px Verdana;}
+#footer address img {vertical-align:middle;}
+#footer address a {font:bold 9px Tahoma; color:#333;}
+#footer address a:hover {color:#009bc8;}
+#footer address span {padding-left:2px; font:9px/14px Verdana;}
+#footer address em {padding-left:6px; font:9px verdana;}
+#footer address .logo {display:inline-block; *display:inline; vertical-align:top; *vertical-align:baseline;}
+

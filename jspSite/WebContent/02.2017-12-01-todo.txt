@@ -1,0 +1,2 @@
+1. id check script
+2. guest구현
